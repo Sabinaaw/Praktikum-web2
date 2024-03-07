@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Belanja Online</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+ <div class="container mt-5">
+ <h1 class="text-center mb-4">Belanja Online</h1>
+ <form method="POST" action="form_belanja.php">
+ <div class="form-group">
+ <label for="customer">Nama Customer</label>
+ <input type="text" class="form-control" id="customer" name="customer" value="Putri Fredilina">
+ </div>
+ <div class="form-group">
+ <label for="produk">Pilih Produk</label><br>
+ <input type="radio" id="tv" name="produk" value="TV">
+ <label for="tv">TV</label><br>
+ <input type="radio" id="kulkas" name="produk" value="KULKAS">
+ <label for="kulkas">KULKAS</label><br>
+ <input type="radio" id="mesin_cuci" name="produk" value="MESIN CUCI" checked>
+ <label for="mesin_cuci">MESIN CUCI</label><br>
+ </div>
+ <div class="form-group">
+ <label for="jumlah">Jumlah Beli</label>
+ <input type="text" class="form-control" id="jumlah" name="jumlah" value="2">
+ </div>
+ <button type="submit" name="proses" class="btn btn-primary">Simpan</button>
+ </form>
+ </div>
+</body>
+</html>
